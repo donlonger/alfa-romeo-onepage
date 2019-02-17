@@ -1,0 +1,14 @@
+@import "_reset.scss";
+@import "_2-functions.scss";
+@import "_1-variables.scss";
+
+$base-font-size: 16px;
+$base-font-weight: 400;
+$base-font-family: "Titillium Web", sans-serif;
+$second-font-family: "Metronic Slab Pro Air", sans-serif;
+
+$colors-stack: (
+		black:		(#000000, #000000),
+		gray:		(#cccccc, #cccccc),
+		white: 		(#ffffff, #ffffff)
+);
