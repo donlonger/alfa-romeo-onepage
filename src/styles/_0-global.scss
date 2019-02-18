@@ -12,7 +12,7 @@ $second-font-family: "Metronic Slab Pro Air", sans-serif;
 $colors-stack: (
 		black:		(#000000, #1e1e1e),
 		gray:		(#848484, #cccccc),
-		white: 		(#ffffff, #ffffff),
+		white: 		(#ffffff, #f3f3f3),
 		red:		(#d30222),
 		green:		(#017f3d)
 );
@@ -38,6 +38,7 @@ h1 {
 	text-transform: uppercase;
 	font-size: 72px;
 	font-weight: 700;
+	margin-top: 90px;
 }
 
 h3 {
