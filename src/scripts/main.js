@@ -21,29 +21,49 @@
 
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
-            navigation : true  
+            navigation : true,
+            responsive:{
+                0: {
+                    items: 0
+                },
+
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:2
+                },
+
+                1300: {
+                    items: 3
+                }
+
+            }  
         });
 
     AOS.init();
 
     $(".nav-bar #burger").click(function () {
 		$(this).toggleClass("open");
-        $(this).next(".menu").fadeToggle();
-        $(this).prev(".logo").toggleClass("open");
+        $(this).next(".menu").slideToggle(50);
+        $(this).next(".menu").toggleClass("open");
     });
 
 	$(".nav-bar  .menu a").click(function () {
-        $(".nav-bar  #burger").removeClass("open");
-        $(".nav-bar  .menu").fadeOut();
+        $(".nav-bar #burger").toggleClass("open"); 
         $(".nav-bar  .logo").removeClass("open");
+        $(".nav-bar  .menu").slideToggle(100);
+        $(".nav-bar  .menu").toggleClass("open");
+        
     });
 
     $(window).scroll(function() {
         fn.updateVars();
-        console.log(fn);
-        if (fn.scrollTop > 110) {
+        if (fn.scrollTop > 250) {
             $(".top-wrapper").addClass("fixed");        
-        } else if (fn.scrollTop <= 110) {
+        }
+        
+        else if (fn.scrollTop <= 250) {
             $(".top-wrapper").removeClass("fixed");    
         }
     });
