@@ -160,6 +160,9 @@ body {
     -webkit-box-shadow: 0px 6px 21px -5px rgba(0, 0, 0, 0.61);
     -moz-box-shadow: 0px 6px 21px -5px rgba(0, 0, 0, 0.61);
     box-shadow: 0px 6px 21px -5px rgba(0, 0, 0, 0.61); }
+    @media (max-width: 500px) {
+      .nav-bar .top-wrapper.fixed {
+        align-items: 500px; } }
     .nav-bar .top-wrapper.fixed #burger span {
       background: grey; }
     .nav-bar .top-wrapper.fixed .logo {
@@ -169,10 +172,20 @@ body {
         padding: 10px 0 0 0;
         transition: .3s all;
         height: 70%; }
+        @media (max-width: 500px) {
+          .nav-bar .top-wrapper.fixed .logo img {
+            padding: 8px 0 0 0; } }
+    @media (max-width: 500px) {
+      .nav-bar .top-wrapper.fixed {
+        height: 30px;
+        top: 25px; } }
   .nav-bar .top-wrapper .logo {
     transition: .3s all;
     height: 70px;
     padding: 0 0 0 20px; }
+    @media (max-width: 500px) {
+      .nav-bar .top-wrapper .logo {
+        height: 50px; } }
     .nav-bar .top-wrapper .logo img {
       transition: .3s all;
       height: 100%; }
@@ -232,6 +245,9 @@ body {
       @media (max-width: 899px) {
         .nav-bar .top-wrapper .menu ul {
           margin-top: 120px; } }
+      @media (max-width: 500px) {
+        .nav-bar .top-wrapper .menu ul {
+          margin-top: 80px; } }
       .nav-bar .top-wrapper .menu ul li {
         display: flex;
         margin: 5px 0;
@@ -484,7 +500,7 @@ body {
         padding: 20px; } }
     @media (max-width: 550px) {
       .content.photo-text .text {
-        width: 460px;
+        width: 420px;
         text-align: center; } }
     @media (max-width: 450px) {
       .content.photo-text .text {
@@ -535,6 +551,9 @@ body {
       .content.photo-text.to-right .text {
         width: 460px;
         padding: 20px; } }
+    @media (max-width: 500px) {
+      .content.photo-text.to-right .text {
+        width: 420px; } }
     @media (max-width: 450px) {
       .content.photo-text.to-right .text {
         width: 280px;
@@ -634,8 +653,8 @@ body {
           max-width: 700px; } }
       @media (max-width: 800px) {
         #summary .summary-content #summary-text {
-          width: 500px;
-          max-width: 500px; } }
+          width: 440px;
+          max-width: 440px; } }
       @media (max-width: 500px) {
         #summary .summary-content #summary-text {
           width: 380px;
